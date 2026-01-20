@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir une catégorie - Kiritassi</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <nav>
+        <div class="app-header">
+            <h1>Kiritassi</h1>
+        </div>
+        <ul>
+            <li onclick="goHome()">← Retour</li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="category-selector-page">
+            <h2>Choisir une catégorie</h2>
+            
+            <div class="categories-list" id="categoriesList">
+                <!-- Les catégories seront ajoutées dynamiquement -->
+            </div>
+            
+            <div class="new-category-section">
+                <h3>Ou créer une nouvelle catégorie</h3>
+                <div class="new-category-form">
+                    <input type="text" id="newCategoryInput" class="new-category-input" placeholder="Nom de la catégorie...">
+                    <button class="create-category-btn" onclick="createAndGoToNote()">Créer et continuer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="categorie.js"></script>
+</body>
+</html>

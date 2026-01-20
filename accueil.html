@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiritassi - Mes Notes</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <nav>
+        <div class="app-header">
+            <h1>Kiritassi</h1>
+        </div>
+        <ul>
+            <li class="active" onclick="switchView('all')">Toutes les notes</li>
+            <li onclick="switchView('recent')">Récentes</li>
+            <li onclick="switchView('new')">Nouvelle note</li>
+            <li onclick="switchView('tasks')">Tâches</li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="content-header">
+            <h2 id="viewTitle">Toutes les notes</h2>
+            <input type="text" class="search-bar" placeholder="Rechercher une note..." id="searchBar">
+        </div>
+        
+        <div class="notes-container" id="notesContainer">
+            <!-- Les notes seront ajoutées ici dynamiquement -->
+        </div>
+    </div>
+
+    <button class="new-note-btn" onclick="createNewNote()">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
